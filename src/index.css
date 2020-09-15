@@ -1,0 +1,46 @@
+body{
+    background-color: rgba(116, 146, 230, 0.767);
+    
+}
+.containerEncabezado{
+ /* border: solid   white 2px; */
+}
+.containerDatos{
+    /* border: solid rgb(251, 255, 0) 2px ; */
+    margin-top: 20px;
+}
+
+
+th{
+    background-color: rgba(0, 68, 255, 0.726);
+    width:160px;
+    font-family: 'Luckiest Guy', cursive;
+    color: #fff;
+}
+
+td{
+    background-color:  rgba(0, 68, 255, 0.726); ;
+    font-family: 'Luckiest Guy', cursive;
+    color: #fff;
+
+}
+
+.tdTabla1width{
+    
+    width:300px;
+
+}
+
+.tdTabla2width{
+    width:30%;
+
+}
+
+.tdTabla2-actividadwidth{
+    width:800px;
+
+}
+
+.ActividadyNumero{
+    background-color: rgba(149, 216, 255, 0.884);
+}
