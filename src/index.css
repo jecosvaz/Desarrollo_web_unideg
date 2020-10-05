@@ -1,6 +1,20 @@
 body{
-    background-color: rgba(116, 146, 230, 0.767);
+    font-family: 'Raleway', sans-serif;
+    background: #222;
+    color: #aaa
     
+}
+
+h1,h2{
+    font-weight: 200;
+    margin: 0.4em 0;
+  }
+h1{ 
+   font-size: 3.5em; 
+}
+h2 {
+    color: #888;
+    font-size: 2em;
 }
 .containerEncabezado{
  /* border: solid   white 2px; */
