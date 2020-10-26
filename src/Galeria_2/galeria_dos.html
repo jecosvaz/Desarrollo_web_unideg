@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../Efec/icons_css/icons.css">
     <link rel="stylesheet" href="./base.css">
     <link rel="stylesheet" href="./galeria1.css">
+    <link rel="stylesheet" href="./modal.css">
     <title>Galeria dos</title>
     
   </head>
@@ -101,6 +102,7 @@
       </nav>
     </div> <!-- navbar fin -->
     <main>
+      <!-- destinos -->
       <section>
         <h2 class="text-center mt-5">Revisa nuestros destinos</h2>
       </section>
@@ -145,7 +147,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum totam repellat delectus reiciendis itaque, quam inventore officiis, doloribus molestiae maiores nisi! Omnis magni non expedita ex recusandae. Voluptatum, blanditiis, sed excepturi cumque provident iusto id dolore perspiciatis perferendis inventore in harum veniam natus nam voluptas omnis. In magnam magni minima cum! Tempora, fuga. Ipsa maxime consectetur ab perferendis earum?
           </p>
         </div>
-
+        <!-- fin destinos -->
       </section>
       <br>
       <!-- galeria y videos -->
@@ -155,17 +157,33 @@
       <br>
       <!-- primera seccion galeria -->
       <section>
+
         <div class="card-deck">
           <div class="card">
-            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/beach-quotes-1559667853.jpg" class="card-img-top" alt="...">
+            <img id="myImg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/beach-quotes-1559667853.jpg" class="card-img-top" alt="...">
           </div>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80" class="card-img-top" alt="...">
+            <img id="myImg2" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80" class="card-img-top" alt="...">
           </div>
+          <!-- The Modal -->
+          <div id="myModal2" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img02">
+            <div id="caption2"></div>
+          </div>
+          
           <div class="card">
             <img src="https://images.unsplash.com/photo-1512813389649-acb9131ced20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-            
           </div>
+        
+        
         </div>
       </section>
       <!-- seccion dos de imagenes -->
@@ -182,6 +200,28 @@
           </div>
         </div>
       </section>
+      <!-- Seccion de videos -->
+      <section>
+        <div class="row mt-5">
+          <div class="center col-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/TUzDJyGQ5Y4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="mt-5 col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zPVDTEr_DGw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="mt-5 col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/onOEns_MnC4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+      </section>
+
     </main>
     
     <!-- Footer -->
@@ -211,7 +251,7 @@
 
       <hr class="clearfix w-100 d-md-none pb-3">
 
-      <!-- Grid column -->git
+      <!-- Grid column -->
       <div class="col-md-3 mb-md-0 mb-3">
 
         <!-- Links -->
@@ -273,7 +313,8 @@
 
 </footer>
 <!-- Footer -->
-    
+    <!-- My script -->
+    <script src="./galeria2.js"></script> 
     <!-- scrip bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
