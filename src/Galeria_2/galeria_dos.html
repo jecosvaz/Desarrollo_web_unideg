@@ -18,7 +18,9 @@
   </head>
   <body>
     <h1>Galeria dos</h1>
-    <!-- navbar -->
+   
+    <main>
+       <!-- navbar -->
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="../../index.html">Travel México</a>
@@ -101,7 +103,6 @@
         </div>
       </nav>
     </div> <!-- navbar fin -->
-    <main>
       <!-- destinos -->
       <section>
         <h2 class="text-center mt-5">Revisa nuestros destinos</h2>
@@ -199,6 +200,7 @@
             <img src="https://images.unsplash.com/photo-1512813389649-acb9131ced20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
           </div>
         </div>
+        
       </section>
       <!-- Seccion de videos -->
       <section>
@@ -220,6 +222,39 @@
             </div>
         </div>
       </div>
+      </section>
+      <!-- Reservaciones -->
+      <section class="mt-4">
+        <div class="container">
+          <h3 class="text-center mt-5">Reservaciones</h3>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Coloca tu correo</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Selecciona el destino</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Ciudad de México</option>
+              <option>Guadajalara</option>
+              <option>Guanajuato</option>
+              <option>Monterrey</option>
+              <option>Oaxaca</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Numero de personas</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Confirma tu reservacion</button>
+        </form>
       </section>
 
     </main>
