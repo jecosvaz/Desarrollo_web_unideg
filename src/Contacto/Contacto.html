@@ -1,43 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link de google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- link bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./src/index.css">
-    <title>Travel México</title>    
-</head>
-<body onload="ini()">
-    <!-- titulo -->
-    <div class="containerEncabezado bubbles">
-    <h1>Travel México</h1>
-    <h2>Con travel México la
-      <span
-      class="txt-rotate"
-      data-period="2000"
-      data-rotate='[ "aventura se escribe sola.", "diversion se escribe sola.", "comodidad se escribe sola."]'></span>
-    </h2>
-    </div>
-    <!-- Card-->
-    <div class="containerDatos">
-      <div class="card" style="width: rem;">
-        <img src="https://blogs.unitec.mx/hs-fs/hubfs/Blogs_UNITEC/Corp_Samara/para-que-sirve-la-programacion-1-compressor.jpg?width=1000&name=para-que-sirve-la-programacion-1-compressor.jpg" class="card-img-top" alt="Programador con pizza">
-        <div class="card-body">
-          <h3 class="card-title">Creado por Jesús Daniel Cosme Vázquez</h3>
-          <h5 class="card-title" id="date">Card title</h5>
-          <p class="card-text" id="tiempo">Some quick example text to build on the card title and make up the bulk of the card's content.</p>        
-        </div>
-      </div>     
-    </div>
+    <!-- link de imagenes css -->
+    <link rel="stylesheet" href="../Efec/icons_css/icons.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./galeria1.css">
+    <title>Galeria uno</title>
     
+  </head>
+  <body>
+    <h1>Contacto</h1>
+
+<main>
     <!-- navbar -->
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Nombre empresa</a>
+        <a class="navbar-brand" href="../../index.html">Travel México</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-      
+        </button>      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <!-- Acerca -->
@@ -67,7 +55,7 @@
                 Galeria 1
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./src/galeria1/galeria_uno.html">Galeria 1</a>
+                <a class="dropdown-item" href="../galeria1/galeria_uno.html">Galeria 1</a>
               </div>
             </li>
             <!-- Galeria 2 -->
@@ -76,7 +64,7 @@
                 Galeria 2
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./src/Galeria_2/galeria_dos.html">Galeria 2</a>
+                <a class="dropdown-item" href="../Galeria_2/galeria_dos.html">Galeria 2</a>
               </div>
             </li>
             <!-- Cotizaciones -->
@@ -94,7 +82,7 @@
                 Contacto
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./src/Contacto/Contacto.html">Formulario de contacto</a>
+                <a class="dropdown-item" href="./Contacto.html">Formulario de contacto</a>
               </div>
             </li>
             <!-- secion -->
@@ -114,42 +102,27 @@
         </div>
       </nav>
     </div>
-    <!-- Tabla -->
-    <div class="containerDatos">
-      <table id="tabla" class=" table-bordered">
-        <thead>
-          <tr>
-              <th class="tdTabla2width ActividadyNumero">Numero</th>
-              <th class="tdTabla2-actividadwidth ActividadyNumero">Actividad</th>
-          </tr>
-      </thead>  
-        <tbody>
-            <tr>
-              <td class=".tdTabla2width ">2</td><td  class="tdTabla2-actividadwidth" >Actividad 2: Servicios de hospedaje y menú</td>
-            </tr>
-            <tr>
-              <td class=".tdTabla2width">3</td><td class="tdTabla2-actividadwidth" >Actividad 3: Estructura Global de un documento</td>
-            </tr>
-            <tr>
-              <td class=".tdTabla2width">4</td><td class="tdTabla2-actividadwidth">Actividad 4: Galeria de imagenes 1</td>
-            </tr>
-            <tr>
-              <td class=".tdTabla2width">5</td><td class="tdTabla2-actividadwidth">Actividad 5: Galería de imagenes 2</td>
-            </tr>
-            <tr>
-              <td class=".tdTabla2width">6</td><td class="tdTabla2-actividadwidth">Actividad 6: Presupuestos</td>
-            </tr>
-            <tr>
-              <td class=".tdTabla2width">7</td><td class="tdTabla2-actividadwidth">Actividad 7: Contactos</td>
-            </tr>
-            <tr>
-              <td class=".tdTabla2width">8</td><td class="tdTabla2-actividadwidth">Actividad 8: Ofertas y promociones</td>
-            </tr>
-          </tbody>
-        </table>
-  </div>
-  <!-- Footer -->
-  <footer class="page-footer font-small blue pt-4">
+    <!-- formulario -->
+      <div class="container mt-5">
+        <form>
+            <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Nombre</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Pon tu nombre completo">          
+            </div>        
+            <div class="form-group">
+            <label for="exampleFormControlTextarea1">Agreganos tus comentarios</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    <!-- fin del formulario     -->
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
@@ -161,13 +134,41 @@
       <div class="col-md-6 mt-md-0 mt-3">
 
         <!-- Content -->
-        <h5 class="text-uppercase">Footer Content</h5>
-        <p>Here you can use rows and columns to organize your footer content.</p>
+        <h5 class="text-uppercase">Travel México</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur in laudantium tempora, iusto doloribus repellat nesciunt nemo fuga aperiam reiciendis laborum dolorum quas vitae dolores eligendi consectetur cum animi fugiat? </p>
+        <br>
+        <p>
+          <span class="material-icons">home</span> Direccion: Lorem ipsum dolor sit.</p> <p><span class="material-icons">
+            phone
+            </span>Telefono: 5555555555</p>
+
 
       </div>
       <!-- Grid column -->
 
       <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Redes sociales </h5>
+
+        <ul class="list-unstyled">
+          <li>
+             <img class="icon_svg" src="../imagenes/icons/facebook.svg" alt="logotipo de facebook"><a href="#!">Facebook</a>
+          </li>
+          <li>
+            <a href="#!">Instagram</a>
+          </li>
+          <li>
+            <a href="#!">Twitter</a>
+          </li>
+          
+        </ul>
+
+      </div>
+      <!-- Grid column -->
 
       <!-- Grid column -->
       <div class="col-md-3 mb-md-0 mb-3">
@@ -190,30 +191,8 @@
           </li>
         </ul>
 
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">LinksA</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-
+        <!-- social -->
+        
       </div>
       <!-- Grid column -->
 
@@ -225,24 +204,17 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    <a href="https://github.com/jecosvaz"> Creado por Jesus Daniel Cosme Vázquez</a>
   </div>
   <!-- Copyright -->
 
-</footer>
+    </footer>
 <!-- Footer -->
-  
+</main>
     
-<!-- Js de src -->
-  <!-- efect title -->
-    <script src="./src/Efec/Tittle_pen_Efect/pen.js"></script>
-  <!-- time -->
-    <script src="./src/index_time.js"></script>
-  <!-- iluminar tabla -->
-    <script src="./src/iluminar.js"></script>    
-<!-- scrip de boostrap    -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
+    <!-- scrip bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
 </html>
